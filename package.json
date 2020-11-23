@@ -1,0 +1,31 @@
+{
+  "name": "flashtalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch & npm run livereload & npm run static & while sleep 2; do echo -n '.'; done",
+    "watch": "./node_modules/watchify/bin/cmd.js --ignore-watch='**/node_modules/**' -v -t coffeeify --debug --extension='.coffee' main.coffee -o bundle.js",
+    "livereload": "./node_modules/livereloadify/cli.js ./",
+    "static": "./node_modules/node-static/bin/cli.js --host-address 0.0.0.0 --port 8089 ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "annyang": "^2.6.1",
+    "anycontrol": "^0.2.4",
+    "axios": "^0.20.0",
+    "backbone": "^1.4.0",
+    "icanhazdadjoke-client": "^1.2.4",
+    "jquery": "^3.5.1",
+    "mithril": "^2.0.4"
+  },
+  "devDependencies": {
+    "coffeeify": "^3.0.1",
+    "coffeescript": "^2.5.1",
+    "livereloadify": "^2.0.0",
+    "node-static": "^0.7.7",
+    "terser": "^3.16.1",
+    "watchify": "^3.10.0"
+  }
+}
