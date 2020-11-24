@@ -1,6 +1,4 @@
-# listeningFlashcards
-
-#[Listening Flashcards](https://mikeymckay.github.io/listeningFlashcards/)
+# [Listening Flashcards](https://mikeymckay.github.io/listeningFlashcards/)
 
 Create flashcards that can be answered by typing or voice recognition. Uses cloud based voice recognition. 
 
