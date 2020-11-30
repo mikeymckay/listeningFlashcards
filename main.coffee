@@ -335,8 +335,8 @@ class WelcomeView extends Backbone.View
   render: =>
     @$el.html "
       <h1>Listening flashcards</h1>
-      You can speak or type your answers.<br/>
-      Email mikeymckay@gmail.com for suggestions on ways to improve this!<br/>
+      You can speak or type your answers. (There is a short delay when processing the spoken answer)<br/>
+      Email <a href='mailto:mikeymckay@gmail.com'>mikeymckay@gmail.com</a> for suggestions on ways to improve this! Also jokes - send me more jokes and I will add them!<br/>
       <br/>
       <br/>
       #{
@@ -344,8 +344,10 @@ class WelcomeView extends Backbone.View
           "addition/123456789": "Addition 1-9"
           "borrowingSubtraction": "Borrowing Subtraction"
           "multiply/25": "Multiply 2 and 5"
-          "multiply/35": "Multiply 3 and 5"
+          "multiply/36": "Multiply 3 and 6"
+          "multiply/4": "Multiply 4"
           "multiply/6": "Multiply 6"
+          "multiply/8": "Multiply 8"
         }
           "
             <a style='font-size:4em;' href='##{route}'>#{text}</a>
