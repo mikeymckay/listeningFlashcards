@@ -348,6 +348,7 @@ class WelcomeView extends Backbone.View
           "multiply/4": "Multiply 4"
           "multiply/6": "Multiply 6"
           "multiply/8": "Multiply 8"
+          "multiply/3456789": "Multiply 3 4 5 6 7 8 9"
         }
           "
             <a style='font-size:4em;' href='##{route}'>#{text}</a>
