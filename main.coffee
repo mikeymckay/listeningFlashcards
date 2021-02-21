@@ -389,9 +389,14 @@ class Router extends Backbone.Router
     @quizView.createQuiz()
 
     questions = for questionNumber in [1..25]
+      b = 10
+      a = 0
+      while b-a >= 10 # Just want the types of subtraction problems that appear when borrowing
+        a = getRndInteger(2,9)
+        b = getRndInteger(10,19)
       new Question
-        a: getRndInteger(2,9)
-        b: getRndInteger(9,19)
+        a: a
+        b: b
         operator: "-"
     @quizView.quiz = new Quiz(questions)
 
