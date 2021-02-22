@@ -337,6 +337,7 @@ class WelcomeView extends Backbone.View
       <h1>Listening flashcards</h1>
       You can speak or type your answers. (There is a short delay when processing the spoken answer)<br/>
       Email <a href='mailto:mikeymckay@gmail.com'>mikeymckay@gmail.com</a> for suggestions on ways to improve this! Also jokes - send me more jokes and I will add them!<br/>
+      Help me make it better, <a href='https://github.com/mikeymckay/listeningFlashcards'>here is the source!</a><br/>
       <br/>
       <br/>
       #{
